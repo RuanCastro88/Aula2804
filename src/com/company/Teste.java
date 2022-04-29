@@ -2,29 +2,24 @@ package com.company;
 
 public class Teste {
     public static void main(String[] args) {
-        //Definir dois alunos; matricular os dois, cancelar a matricula do segundo
-        //Mostra os dados do primeiro
-        Aluno alunoJoao = new Aluno();
-        Aluno alunoPedro = new Aluno();
-        alunoJoao.rm = 1234;
-        alunoJoao.nome = "João Antonio da Silva ";
-        alunoJoao.email = "emaildojão@hotmail.com ";
-        alunoJoao.usuario = "usujão ";
-        alunoJoao.senha = "12345";
+        Escoteiro escoteiroJonas = new Escoteiro();
+        Escoteiro escoteiroRobson = new Escoteiro();
+        Escoteiro escoteiroThiago = new Escoteiro();
 
-        alunoPedro.rm = 4321;
-        alunoPedro.nome = "Pedro Henrique Leandro de Jesus ";
-        alunoPedro.email = "herinque.pedrinhogamer@gmail.com ";
-        alunoPedro.usuario = "pdrinhogameplays ";
-        alunoPedro.senha = "4321";
+        escoteiroJonas.nome = "Jonas Miguel Oliveira";
+        escoteiroJonas.turma = "Turma A";
+        escoteiroJonas.idade = 24;
 
-        alunoJoao.matricular();
-        alunoPedro.matricular();
+        escoteiroRobson.nome = " Robson Roberto De Moraes";
+        escoteiroRobson.turma = " Turma B";
+        escoteiroRobson.idade = 30;
 
-        alunoPedro.cancelarMatricular();
+        escoteiroThiago.nome = "Thiago Alberto da Silva";
+        escoteiroThiago.turma = " Turma C";
+        escoteiroThiago.idade = 18;
 
-        alunoJoao.listarDadosAlunos();
-
-
+        escoteiroJonas.imprimir();
+        escoteiroRobson.imprimir();
+        escoteiroThiago.imprimir();
     }
 }
